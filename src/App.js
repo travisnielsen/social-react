@@ -44,14 +44,14 @@ class App extends React.Component {
     xhr.open("GET", "https://trniel.azure-api.net/users/", true);
 
     // operation.id has a value
-    var operationId = appInsights.context.operation.id;
+    // var operationId = appInsights.context.operation.id;
 
     // operation.rootId is 'null'. Set it to the current operation?
-    appInsights.context.operation.rootId = operationId;
+    // appInsights.context.operation.rootId = operationId;
 
     // Format the value of the Request-Id header based on (root) operation ID
-    var requestId = "|" + operationId + ".";
-    xhr.setRequestHeader('Request-ID', requestId);
+    // var requestId = "|" + operationId + ".";
+    // xhr.setRequestHeader('Request-ID', requestId);
     xhr.setRequestHeader("Ocp-Apim-Subscription-Key", "67f3d2869d7e49dcbfa803e84c19340f;product=unlimited");
     xhr.onload = function(e){
       if (xhr.readyState === 4){
