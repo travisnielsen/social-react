@@ -52,7 +52,7 @@ class App extends React.Component {
     // Format the value of the Request-Id header based on (root) operation ID
     // var requestId = "|" + operationId + ".";
     // xhr.setRequestHeader('Request-ID', requestId);
-    xhr.setRequestHeader("Ocp-Apim-Subscription-Key", "67f3d2869d7e49dcbfa803e84c19340f;product=unlimited");
+    xhr.setRequestHeader("Ocp-Apim-Subscription-Key", "[REDACTED];product=unlimited");
     xhr.onload = function(e){
       if (xhr.readyState === 4){
         if (xhr.status === 200){
